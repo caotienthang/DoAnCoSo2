@@ -1,0 +1,43 @@
+﻿@model DoAnCoSo2.Models.DeThi
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DeThi</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayThi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayThi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ThoiGianThi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThoiGianThi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoLuongCauHoi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoLuongCauHoi)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaDT }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

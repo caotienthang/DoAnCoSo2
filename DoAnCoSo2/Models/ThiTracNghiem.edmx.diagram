@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1c5cb19533b040eeb295bace4e094f6b" Name="Diagram1">
+        <EntityTypeShape EntityType="ThiTNModel.BaiLam" Width="1.5" PointX="12.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThiTNModel.CauHoi" Width="1.5" PointX="10" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThiTNModel.DeThi" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThiTNModel.DeThi_CauHoi" Width="1.5" PointX="12.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThiTNModel.DeThi_SInhVien" Width="1.5" PointX="5.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThiTNModel.Diem" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThiTNModel.GiaoVien" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThiTNModel.MonHoc" Width="1.5" PointX="7.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThiTNModel.Quyen" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThiTNModel.SinhVien" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <AssociationConnector Association="ThiTNModel.FK_BaiLam_CauHoi" ManuallyRouted="false" />
+        <AssociationConnector Association="ThiTNModel.FK_CauHoi_MonHoc" ManuallyRouted="false" />
+        <AssociationConnector Association="ThiTNModel.FK_DeThi_CauHoi_CauHoi" ManuallyRouted="false" />
+        <AssociationConnector Association="ThiTNModel.FK_DeThi_CauHoi_DeThi" ManuallyRouted="false" />
+        <AssociationConnector Association="ThiTNModel.FK_DeThi_SInhVien_DeThi" ManuallyRouted="false" />
+        <AssociationConnector Association="ThiTNModel.FK_Diem_DeThi" ManuallyRouted="false" />
+        <AssociationConnector Association="ThiTNModel.FK_DeThi_SInhVien_SinhVien" ManuallyRouted="false" />
+        <AssociationConnector Association="ThiTNModel.FK_Diem_SinhVien" ManuallyRouted="false" />
+        <AssociationConnector Association="ThiTNModel.FK_GiaoVien_Quyen" ManuallyRouted="false" />
+        <AssociationConnector Association="ThiTNModel.FK_SinhVien_Quyen" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
